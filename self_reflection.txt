@@ -1,0 +1,24 @@
+## Design Excellence
+
+> I'm not too sure if I meet other tasks, but I have built a parser for rslogo that uses "nom" parser combinator library.
+>
+
+Please write a paragraph or two (max. 250 words) describing how your design was
+influenced by this challenge, with specific reference to sections of your code.
+If you completed the "Pull Request" design excellence, please just leave a link
+to your PR.
+
+> The design follows a clear separation of concerns through distinct modules: rs_parser for parsing Logo code, rs_interpreter for executing commands, rs_turtle for handling drawing operations, and rs_ast for representing the program structure. A key design decision was implementing a recursive descent parser using the nom crate, which allows for clear expression of the Logo grammar and robust error handling.
+> The interpreter's architecture centers around the Expression and Command enums in rs_ast.rs, which form a composable Abstract Syntax Tree. This design enables natural handling of nested expressions and control structures. The use of Rust's type system, particularly through enums and pattern matching, ensures type safety while representing Logo's dynamic nature. The interpreter maintains state through the VariableManager and Stack structs, providing clean abstractions for variable management and expression evaluation.
+>
+
+## Design Limitations
+
+If you made any design decisions which you now regret making; but don't to go back and change them,
+let us know here. You can make up your design marks by acknowledging up to 5 things you would do
+differently now.
+
+> 1. The error handling could be more granular and context-aware, potentially using a custom error reporting crate like miette for better error messages
+  2. The current implementation lacks a proper procedure abstraction system, making it difficult to extend with user-defined procedures
+  3. Variable scoping is overly simplistic, making it harder to implement proper lexical scoping
+  4. The command parsing could be more efficient by using a pre-compiled lookup table instead of repeated pattern matching
