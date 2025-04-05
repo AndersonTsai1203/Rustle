@@ -83,7 +83,7 @@ rustle/
 
 #### Part 2: Variables and Queries
 - [ ] ```MAKE``` Command for Variables: Define and assign variables with ```MAKE <variable-name> <value>```.
-- [ ] ```ADDASSIGN``` Command: Implement the += operation for variables (e.g., ```ADDASSIGN :var 5```).
+- [ ] ```ADDASSIGN``` Command: Implement the ```+=``` operation for variables (e.g., ```ADDASSIGN :var 5```).
 - [ ] Handle Variables Without Scope: Ensure that variables are globally available once created.
 - [ ] Support Variable Referencing: Allow variable values to be used directly with :variable syntax.
 - [ ] Implement Queries:
@@ -111,13 +111,13 @@ rustle/
 - [ ] Handle Polish Notation for Math: Ensure the prefix notation (e.g., ```+ "3 "4```) works for mathematical operations.
 - [ ] Stack Management for Operations: Ensure stack behavior for processing expressions.
 - [ ] Implement Boolean Operations:
-  - [ ] ```AND```: Returns TRUE if both values are TRUE.
-  - [ ] ```OR```: Returns TRUE if at least one value is TRUE.
+  - [ ] ```AND```: Returns ```TRUE``` if both values are ```TRUE```.
+  - [ ] ```OR```: Returns ```TRUE``` if at least one value is ```TRUE```.
   - [ ] Error Handling for Invalid Operations: Ensure errors are raised for invalid types or missing arguments.
 
 #### Part 5: Logo Defined Procedures
-- [ ] Implement the TO Command for Procedure Definition: Define named procedures with arguments.
-- [ ] Implement the END Command for Procedure Termination: Mark the end of a procedure definition.
+- [ ] Implement the ```TO``` Command for Procedure Definition: Define named procedures with arguments.
+- [ ] Implement the ```END``` Command for Procedure Termination: Mark the end of a procedure definition.
 - [ ] Procedure Argument Evaluation: Ensure arguments are evaluated at definition-time, not call-time.
 - [ ] Handle Procedure Calls: Ensure defined procedures can be called with specific arguments.
 - [ ] Prevent Recursive Procedures: Ensure that procedures do not call themselves.
@@ -128,14 +128,14 @@ rustle/
 - [ ] Error Handling: Ensure all commands provide useful error messages for invalid input or wrong data types.
 - [ ] Unit Tests for Turtle Commands: Implement tests to verify the functionality of turtle control commands.
 - [ ] Unit Tests for Variables and Queries: Implement tests for variable assignment and querying.
-- [ ] Unit Tests for Conditional and Looping: Implement tests for IF EQ and WHILE EQ structures.
+- [ ] Unit Tests for Conditional and Looping: Implement tests for ```IF EQ``` and ```WHILE EQ``` structures.
 - [ ] Unit Tests for Mathematical Operations: Implement tests for math operations and stack usage.
 - [ ] Unit Tests for Procedures: Implement tests to verify the correct handling of procedures.
 
 #### Extension Ideas (Optional)
-- [ ] Implement Other Comparisons: Support additional comparison operations like GE (greater than or equal), LE (less than or equal).
+- [ ] Implement Other Comparisons: Support additional comparison operations like ```GE``` (greater than or equal), ```LE``` (less than or equal).
 - [ ] Dynamic Variable Types: Allow variables to store more complex types (e.g., lists, dictionaries) later on.
-- [ ] Interactive Mode (REPL): Implement a REPL (Read-Eval-Print Loop) for users to interact with the language.
+- [ ] Interactive Mode (REPL): Implement a ```REPL``` (Read-Eval-Print Loop) for users to interact with the language.
 - [ ] Graphics Rendering: Enhance the pen color functionality to support full RGB values or gradients.
 - [ ] File I/O: Add the ability to save the generated turtle images to files (e.g., SVG, PNG).
 - [ ] Advanced Procedures: Support recursive procedures or support default argument values.
